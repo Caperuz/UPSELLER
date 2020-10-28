@@ -1,10 +1,7 @@
-@mixin h2_mobile {
+@mixin Body($fontWeight, $fontSize, $lineHeight, $letterSpacing) {
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size:32px;
-}
-@mixin h2_mobile {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size:32px;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
 }

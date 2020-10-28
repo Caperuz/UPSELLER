@@ -1,0 +1,25 @@
+.Body1{
+    @include Body(400, 17px, 24px, 0.2px);
+}
+.Body2{
+    @include Body(400, 14px, 24px, 0.5px);
+}
+.AgH1{
+    @include Body(700, 72px, 90%, 0);
+}
+.AgH2{
+    @include Body(700, 48px, 100%, 0);
+}
+.AgH3{
+    @include Body(700, 36px, 100%, 0);
+}
+.AgH4{
+    @include Body(700, 24px, 100%, 0);
+}
+.AgH5{
+    @include Body(400, 24px, 120%, 0);
+}
+.title-upseller{
+    font-family: Futura;
+    font-size: 64px;
+}
