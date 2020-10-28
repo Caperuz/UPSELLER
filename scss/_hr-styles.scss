@@ -1,3 +1,5 @@
+/* Estilos de texto */
+
 .Body1{
     @include Body(400, 17px, 24px, 0.2px);
 }
@@ -19,6 +21,9 @@
 .AgH5{
     @include Body(400, 24px, 120%, 0);
 }
+
+/* Modificando el documento */
+
 .title-upseller{
     font-family: Futura;
     font-size: 64px;
