@@ -27,4 +27,18 @@
 .title-upseller{
     font-family: Futura;
     font-size: 64px;
+    padding-left: 25px;
+}
+.carousel-item.active{
+    background-image: url('../img/bgheader.png');
+    background-position: -46% bottom;
+}
+@media all and(min-width:1024px){
+    .txt-scroll1.Body1{
+        width: 293px;
+    }
+    .txt-scroll1.Body1::before{
+        content: url('../img/arrow.svg');
+        padding-right: 25px;
+    }
 }
