@@ -23,7 +23,10 @@
 }
 
 /* Modificando el documento */
-
+header{
+    background: rgb(159,231,255);
+    background: linear-gradient(0deg, rgba(159,231,255,0) 0%, #e4e9f8 100%);
+}
 .title-upseller{
     font-family: Futura;
     font-size: 64px;
@@ -35,7 +38,25 @@
     background-image: url('../img/bgheader.png');
     background-position: -46% bottom;
 }
+#mainNav{
+    background-color: #fff;
+    -webkit-box-shadow: 0px -4px 63px 12px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px -4px 63px 12px rgba(0,0,0,0.24);
+    box-shadow: 0px -4px 63px 12px rgba(0,0,0,0.24);
+}
+@media all and(min-width:320px){
+    #mainNav .navbar-brand{
+        padding-top: 12px;
+    }
+}
 @media all and(min-width:1024px){
+    #mainNav{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #mainNav .navbar-brand{
+        padding-top: 0;
+    }
     .txt-scroll1.Body1{
         width: 293px;
     }
@@ -43,22 +64,39 @@
         content: url('../img/arrow.svg');
         padding-right: 25px;
     }
+    ul.navbar-nav li:nth-last-child(1){
+        width:257px;
+        height:80px;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    ul.navbar-nav li:nth-last-child(1)::before{
+        content: url(../img/arrow-contact.svg);
+    }
 }
 
-ul.navbar-nav li:nth-last-child(1){
-    width:257px;
-    height:80px;
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-ul.navbar-nav li:nth-last-child(1)::before{
-    content: url(../img/arrow-contact.svg);
+#mainNav.navbar-shrink{
+    min-height: 80px;
+    padding: 0;
 }
+#mainNav .navbar-toggler{
+    margin-top: auto;
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.svg);
+}
+@media (min-width: 992px){
+    .navbar-dark .navbar-brand {
+        max-width: 191px;
+        width: 100%;
+    }
+}
+
 #mainNav .navbar-nav .nav-item:nth-last-child(1) .nav-link{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
