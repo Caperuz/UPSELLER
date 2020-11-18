@@ -1,0 +1,103 @@
+    .carousel input::after {
+        top: -4px;
+    }
+  .carousel {
+    background-color: #fff;
+    width:500px;
+    height:348px;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .carousel input:nth-child(1){
+    margin-left: 33px;
+  }
+  .carousel__nav {
+    width: 12px;
+    height: 12px;
+    margin: 5rem 12px 30px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    z-index: 10;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #C4C4C4, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .carousel__nav:checked {
+    -webkit-animation: check 0.4s linear forwards;
+            animation: check 0.4s linear forwards;
+  }
+  .carousel__nav:checked:nth-of-type(1) ~ .carousel__inner {
+    left: 0%;
+  }
+  .carousel__nav:checked:nth-of-type(2) ~ .carousel__inner {
+    left: -100%;
+  }
+  .carousel__nav:checked:nth-of-type(3) ~ .carousel__inner {
+    left: -200%;
+  }
+  .carousel__nav:checked:nth-of-type(4) ~ .carousel__inner {
+    left: -300%;
+  }
+  .carousel__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .carousel__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: left;
+  }
+  .carousel__image {
+    font-size: 2.7rem;
+        color: #2196F3;
+  }
+  .carousel__caption {
+    color:#374053;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0 auto 28px;
+  }
+  .carousel__txt {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    line-height: 1.5;
+  }

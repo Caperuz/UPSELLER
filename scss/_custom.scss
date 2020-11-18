@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {
-	background: #F8F8FA;
+	background: #fff;
 	font-size: 15px;
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 15px;
@@ -131,7 +131,12 @@ a:hover {
 	letter-spacing: 0.5px;
 	color: #000;
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1;
+	line-height: 2;
+}
+@media all and(min-width:768px){
+	#mainNav .navbar-nav .nav-item .nav-link {
+		line-height: 1;
+	}
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
 	color: #333;
@@ -170,7 +175,7 @@ section#proyecto h2.section-heading {
 	margin-bottom: 15px;
 }
 section#ourmodel h2.section-heading {
-	color: #212529;
+	color: #374053;
 	width: 50%;
     text-align: center;
     margin: 0 auto;
@@ -212,8 +217,7 @@ h1 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500 !important;
 	letter-spacing: .35px;
 }
-#proyecto {
-}
+
 #proyecto p {
 	float: left;
 	margin-top: .3em;
@@ -362,8 +366,8 @@ section#textura2 {
 	height: 112px;
 }
 #mainNav {
-	padding-top: 4px;
-	padding-bottom: 2px;
+	// padding-top: 4px;
+	// padding-bottom: 2px;
 	-webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
 	-moz-transition: padding-top 0.3s, padding-bottom 0.3s;
 	transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -374,7 +378,7 @@ section#textura2 {
 }
 .navbar-brand img {
 	position: absolute;
-	margin-top: -4px;
+	margin-top: 11px;
 	max-width: 90px;
 }
 .navbar-dark .navbar-brand {
@@ -537,7 +541,6 @@ textarea {
 
 #ourmodel {
 	background-position: left -21px top 41px;
-	height: 130px;
 }
 
 #descargaPDF {
@@ -829,8 +832,8 @@ section#contacto2 label {
 }
 
 #mainNav {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	// padding-top: 20px;
+	// padding-bottom: 20px;
 	-webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
 	-moz-transition: padding-top 0.3s, padding-bottom 0.3s;
 	transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -890,8 +893,8 @@ p {
 	border-right: none;
 }
 #mainNav.navbar-shrink {
-	padding-top: 4px;
-	padding-bottom: 19px;
+	// padding-top: 4px;
+	// padding-bottom: 19px;
 	background-color: #F8F8FA;
 }
 #mainNav.navbar-shrink .navbar-brand {
@@ -939,7 +942,6 @@ p {
 }
 #ourmodel {
 	background-position: center top 75px;
-	height: 186px;
 }
 
 #descargaPDF {
@@ -970,13 +972,11 @@ p {
 	height: 165px;
 	color: #fff;
 }
-#contacto2 {
-}
 }
 
 @media (min-width: 1200px) {
-#ourmodel .nonemobi img {
-	width: 100%;
-	height: 425px;
-}
+	#ourmodel .nonemobi img {
+		width: 100%;
+		height: 425px;
+	}
 }
