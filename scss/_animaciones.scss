@@ -1,13 +1,82 @@
+img.hand_blue.mobile{
+   display: block;
+   left: 23px;
+}
+img.hand_blue.desktop{
+   display: none;
+}
+.our_services {
+   margin-bottom:87px;
+   padding:0;
+   display: flex;
+   justify-content: center;
+}
+section#services img{
+   position: absolute;
+}
+section#services img.manchas {
+   display: none;
+}
+section#services img.bg_blue{ display: none;}
+
+@media all and(min-width:768px){
+   
+   img.hand_blue{
+      display: block;
+   }
+   img.hand_blue.mobile{
+      display: none;
+   }
+   .our_services {
+      margin-bottom:auto;
+      display: block;
+   }
+   section#services img.bg_blue{ display: block;}
+   section#services img.bg_blue{
+      left: -321px;
+  }
+   section#services img:nth-of-type(2).hand_blue.desktop{
+      display: block;
+      margin:0 auto;
+      width:462px;
+      left: 4px;
+   }
+   section#services img.manchas {
+      display: block;
+      left: -38px;
+      width:700px;
+   }
+   section#services img:nth-of-type(2){
+      margin:170px auto;
+      width:536px;
+      left: -117px;
+  }
+  .carousel__inner{
+      top: 72px;
+  }
+}
+@media all and(min-width:1024px){
+   .carousel__inner{
+         top: 0;
+   }
+   section#services {
+      margin-top: 122px;
+    }
+}
 @media all and(min-width:1240px){
+   section#services img:nth-of-type(2).hand_blue.desktop{
+      display: block;
+      margin:0 auto;
+      width:551px;
+      left: 4px;
+   }
     .img-about-us img:nth-of-type(1).bg_pink{
         top: -200px;
-        right: -321px;
+        right: -180px;
     }
     .img-about-us img:nth-of-type(2){
         width:536px;
-        right: -117px;
     }
-    /* bg blue */
     section#services img{
         position: absolute;
     }
@@ -19,20 +88,31 @@
         width:536px;
         left: -117px;
     }
+    section#services img.manchas {
+      left: -38px;
+      width:1200px;
+    }
+}
+@media all and(min-width:1680px){
+   section#services img.manchas {
+      left: -38px;
+      width:auto;
+    }
 }
 .img-about-us img:nth-of-type(1).bg_pink{
-    opacity: 0;
-    transform: translate(700px);
+   opacity: 0;
+   -webkit-transform: translate(700px);
+       -ms-transform: translate(700px);
+           transform: translate(700px);
 
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
 }
 .img-about-us img:nth-of-type(2).cartel_data{
     opacity: 0;
     transform: translate(700px);
-
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -50,25 +130,45 @@
     animation-fill-mode: both;
  }
 //  manos azules
+img.line2{
+    left: -249px;
+    bottom: -69px;
+    z-index: -1;
+}
+@media all and(min-width:768px){
+   img.line2{
+      left: -331px;
+      bottom: -115px;
+      z-index: -1;
+   }
+}
 img.bg_blue{
     opacity: 0;
     transform: translate(-700px);
-
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
 img.marketplace{
+   width:320px;
+   margin-top: 40px;
     opacity: 0;
     transform: translate(-700px);
-
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    z-index: 6;
  }
+ @media all and(min-width:768px){
+   img.marketplace{
+      margin: auto;
+      width:auto;
+   }
+}
 img.hand_blue{
     opacity: 0;
     bottom: -267px;
@@ -96,8 +196,6 @@ img.hand_blue{
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
  }
-
-
 @-webkit-keyframes handIn {
     0% {opacity: 0;}
     100% {opacity: 1; transform: translate(0);bottom:0;transform: translateY(0);}
@@ -110,10 +208,8 @@ img.hand_blue{
     -webkit-animation-name: handIn;
     animation-name: handIn;
  }
-
-
  .manchas {
-    top: -908px;
+    top: -408px;
     opacity: 0;
     left: -100px;
     position: absolute;
@@ -127,18 +223,16 @@ img.hand_blue{
 }
  @-webkit-keyframes fadeDown {
     0% {opacity: 0;}
-    100% {opacity: 0.5; transform: translate(0);bottom:0;transform: translateX(0);}
+    100% {opacity: 0.3; transform: translate(0);bottom:0;transform: translateX(0);}
  }
  @keyframes fadeDown {
     0% {opacity: 0;}
-    100% {opacity: 0.5;  transform: translate(0);bottom:0;transform: translateX(0);}
+    100% {opacity: 0.3;  transform: translate(0);bottom:0;transform: translateX(0);}
  }
  .manchasIn {
     -webkit-animation-name: fadeDown;
     animation-name: fadeDown;
  }
-
-
  .city, .people {
     opacity: 0;
     transform: translateY(-200px);
@@ -152,7 +246,7 @@ img.hand_blue{
     0% {opacity: 0;}
     100% {opacity: 1; transform: translate(0);bottom:0;transform: translateY(0);}
  }
- @keyframes fadeDown {
+ @keyframes cityDown {
     0% {opacity: 0;}
     100% {opacity: 1;  transform: translate(0);bottom:0;transform: translateY(0);}
  }
@@ -164,8 +258,6 @@ img.hand_blue{
     -webkit-animation-name: cityDown;
     animation-name: cityDown;
  }
-
-
  .typed-cursor.typed-cursor--blink {
     display: inline;
     opacity: 0;
@@ -173,6 +265,15 @@ img.hand_blue{
     -webkit-animation: typedjsBlink 0.6s infinite;
     animation: typedjsBlink 0.6s infinite;
     animation-delay: 2s;
+    display: none;
+}
+@media all and(min-width:1240px){
+   .typed-cursor.typed-cursor--blink {
+       display: inline;
+   }
+   .img-about-us img:nth-of-type(2).cartel_data{
+      left: 50px;
+   }
 }
 @keyframes typedjsBlink {
     0% {opacity: 0;}
@@ -183,45 +284,168 @@ img.hand_blue{
      opacity: 0;
  }
  .header-block h1 {
-     width: 533px;
+     width: 100%;
+ }
+ @media all and (min-width:768px){
+   .header-block h1 {
+      width: 50%;
+  }
+ }
+ .header-block h1 span:nth-of-type(2){
+    padding-top:0px;
+ }
+ @media all and (min-width:1240px){
+   .header-block h1 {
+      width: 533px;
+      height: 310px;
+  }
+  .header-block h1 span:nth-of-type(2){
+   padding-top:13px;
+}
  }
  .hand_connect {
-    // background-color: yellow;
     width: 100%;
     position: relative;
     height: 100%;
     bottom: -220px;
-    margin-left: 281px;
     overflow: hidden;
  }
  .hand_connect img {
     position: absolute;
     
  }
- 
  .hand_open {
-    // background-color: red;
-    width: 100%;
-    height: 254px;
-    overflow: hidden;
-    position: relative;
-    justify-content: flex-end;
-    display: flex;
-    z-index: 5;
-    margin-top: 496px;
-    left: -205px;
- }
+   width: 100%;
+   height: 334px;
+   overflow: hidden;
+   position: relative;
+   -webkit-box-pack: end;
+       -ms-flex-pack: end;
+           justify-content: flex-end;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   z-index: 5;
+   
+}
+@media all and (max-width:767px){
+   .hand_open {
+      background-image: url('../img/bg-blue.svg');
+   }
+}
+@media all and (min-width:768px){
+   .hand_open {
+      height: 254px;
+      margin-top: 496px;
+      left: -115px;
+   }
+}
+@media all and (min-width:1240px){
+   .hand_open {
+      height: 254px;
+      margin-top: 496px;
+      left: -205px;
+   }
+}
  .hand_open img {
     position: absolute;
  }
- 
 .img-about-us img.hand.enchufa{
-   bottom: 0;
+   width: 126px;
+   top: -1px;
+   left: 108px;
+   z-index: 2;
 }
 img.hand_blue.enchufa{
+   height: 109px;
    bottom: 0;
 }
-
 #services .container .row:nth-of-type(1){
-    margin-bottom:150px;
+    margin-bottom:64px;
+}
+@media all and (min-width:768px){
+   img.hand_blue.enchufa{
+      height: auto;
+   }
+   .img-about-us img.hand.enchufa{
+      left: 292px;
+   }
+}
+@media all and (min-width:1024px){
+   .img-about-us img.hand.enchufa{
+      left: 172px;
+   }
+}
+@media all and (min-width:1240px){
+   .img-about-us img.hand.enchufa{
+      width:289px;
+      bottom: 0;
+      top: auto;
+      left: 150px;
+   }
+}
+@media all and (min-width:1680px){
+   .img-about-us img.hand.enchufa{
+      width:289px;
+      left: auto;
+   }
+   .img-about-us img:nth-of-type(1).bg_pink{
+      right: -321px;
+  }
+  .img-about-us img:nth-of-type(2){
+      right: -117px;
+   }
+   .hand_connect {
+      margin-left:281px;
+   }
+}
+/* Portrait */
+
+/* tablets portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : portrait) { 
+   .hand_open{
+      height: 303px;
+      left: 0;
+   }
+    section#services img.bg_blue{
+        display: none;
+    }
+    .our_services{
+        background-image: url(../img/bg-blue.svg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    section#services img:nth-of-type(2).hand_blue.desktop{
+         display: block;
+         margin: 0 auto;
+         width: 781px;
+         left: -61px;
+    }
+    section#services img:nth-of-type(2){
+        margin: 100px auto;
+        width: 536px;
+        left: auto;
+    }
+    section#aboutus{
+      height: 940px;
+    }
+    .yes-content .AgH2{
+       font-size:36px;
+       text-align: left;
+    }
+    #ourmodel2 p {
+      padding: 0 100px;
+      font-size: 21px;
+    }
+    .carousel {
+      height: 400px;
+    }
+    section#ourmodel h2.section-heading {
+      font-size: 38px;
+    }
 }

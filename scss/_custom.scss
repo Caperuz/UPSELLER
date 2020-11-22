@@ -78,10 +78,14 @@ a:hover {
 .title-upseller{
 	text-transform: uppercase;
     display: flex;
-    width: 40%;
+    width: 100%;
     margin-left: 2em;
 }
-
+@media all and(min-width:1240px){
+	.title-upseller{
+		width: 40%;
+	}
+}
 .txt-scroll1{
 	padding-top: 20em;
     width: 40%;
@@ -95,9 +99,12 @@ a:hover {
 	margin: 0 auto;
 	position: absolute;
     text-align: center;
-    top: 15em;
 }
-
+@media all and (min-width:1240px){
+	.btn-play{
+		top: 15em;
+	}
+}
 .icn_play{
 	width: 72px;
 	height: auto;
@@ -129,7 +136,7 @@ a:hover {
 	font-weight: 500;
 	padding: 0.75em 0;
 	letter-spacing: 0.5px;
-	color: #000;
+	color: #2C2A32;
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 2;
 }
@@ -178,7 +185,7 @@ section#ourmodel h2.section-heading {
 	color: #374053;
 	width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 section#ubicacion h2.section-heading {
 	padding-left: 30px;
@@ -565,7 +572,7 @@ textarea {
 	height: 130px;
 }
 #contacto {
-	background-image: url(../img/back_contacto.jpg);
+	// background-image: url(../img/back_contacto.jpg);
 	background-position: left -21px top -30px;
 	background-repeat: no-repeat;
 	height: 130px;
@@ -668,7 +675,7 @@ textarea {
 #planta .subm a {
 	font-size: 1em;
 	padding: .0em 1.3em !important;
-	color: #000;
+	color: #2C2A32;
 	border-right: 1px solid #3c518a;
 }
 
@@ -791,7 +798,7 @@ section#proyecto h2.section-heading {
 	margin: 30px 0 45px 0;
 }
 section {
-	padding: 75px 0 0 0;
+	padding: 0;
 }
 #proyecto .col-lg-4 {
 	margin-top: 0rem;
@@ -902,8 +909,6 @@ p {
 	padding-top: 0;
 	padding-bottom: 6px;
 }
-.navbar-expand-lg .navbar-nav {
-}
 #proyecto .col-lg-4.deta {
 	padding-left: 25px;
 }
@@ -966,7 +971,6 @@ p {
 	height: 165px;
 }
 #contacto {
-	background-image: url(../img/back_contacto.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	height: 165px;

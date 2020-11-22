@@ -1,7 +1,7 @@
 const navbar_toggler = document.querySelector('.navbar-toggler');
 const navbarhr = document.querySelector('.navbar');
 navbar_toggler.addEventListener('click', () =>{
-    navbarhr.classList.toggle('clase');
+    navbarhr.classList.toggle('bgblank');
 });
 window.addEventListener('scroll', () => {
     const bgpink = document.querySelector('.bg_pink');
@@ -48,13 +48,23 @@ window.addEventListener('scroll', () => {
     }
 });
 window.addEventListener('scroll', () => {
-    const hand_blue = document.querySelector('.hand_blue');
+    const hand_blue = document.querySelector('.hand_blue.mobile');
     const thehand_blue = hand_blue.getBoundingClientRect();
     console.log(thehand_blue);
 
     if (thehand_blue.top < 1500) {
         hand_blue.classList.add('handIn');
         hand_blue.classList.add('enchufa');
+    }
+});
+window.addEventListener('scroll', () => {
+    const hand_blue_desktop = document.querySelector('.hand_blue.desktop');
+    const thehand_blue_desktop = hand_blue_desktop.getBoundingClientRect();
+    console.log(thehand_blue_desktop);
+
+    if (thehand_blue_desktop.top < 1500) {
+        hand_blue_desktop.classList.add('handIn');
+        hand_blue_desktop.classList.add('enchufa');
     }
 });
 window.addEventListener('scroll', () => {
@@ -117,14 +127,8 @@ setTimeout(function(){
       h12.style.opacity = "1";
     typeEffect(h12, speedtwo);
   }, 1800);
-const acloser = document.querySelector('.acloser');
 const videoHome = document.querySelector('#videoHome');
-const videoContainer = document.querySelector('#videoContainer');
-const backdrop = document.querySelector('.modal-backdrop');
-
-
-backdrop.addEventListener('click', () => {
-    videoHome.remove();
-    videoContainer[0].pause();
+videoHome.addEventListener('click', () => {
+     location.reload();
     }
 )

@@ -2,9 +2,8 @@
         top: -4px;
     }
   .carousel {
-    background-color: #fff;
     width:500px;
-    height:348px;
+    height:365px;
     position: relative;
     overflow: hidden;
     display: -webkit-box;
@@ -22,6 +21,11 @@
     -webkit-justify-content: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+  @media all and (min-width:768px){
+    .carousel {
+      height:348px;
+    }
   }
   .carousel input:nth-child(1){
     margin-left: 33px;
@@ -76,8 +80,13 @@
   }
   .carousel__contents {
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
     text-align: left;
+  }
+  @media all and (min-width:1024px){
+    .carousel__contents {
+      padding: 2rem;
+    }
   }
   .carousel__image {
     font-size: 2.7rem;
@@ -87,12 +96,18 @@
     color:#374053;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 100%;
     letter-spacing: 0;
     text-align: left;
     margin: 0 auto 28px;
   }
+  @media all and (min-width:768px){
+    .carousel__caption {
+      font-size: 48px;
+    }
+  }
+  
   .carousel__txt {
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
