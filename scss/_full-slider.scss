@@ -4,13 +4,14 @@
 dl, ol, ul {
   margin-top: 0;
   margin-bottom: 1rem;
-  padding-top: 10px;
   font-weight: normal;
   padding-left: 0;
   text-align: left;
 
 }
-
+p.help-block.text-danger ul{
+  padding-top: 10px;
+}
  .carousel-item {
     width: 983px;
     margin: 160px auto 0;
