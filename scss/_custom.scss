@@ -1,11 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body {
+	font-family: 'Poppins', sans-serif, 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #fff;
 	font-size: 15px;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 }
 .tinted-image-sal {
@@ -137,7 +136,6 @@ a:hover {
 	padding: 0.75em 0;
 	letter-spacing: 0.5px;
 	color: #2C2A32;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 2;
 }
 @media all and(min-width:768px){
@@ -193,7 +191,6 @@ section#ubicacion h2.section-heading {
 }
 h1 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: .7px;
 }
 #proyecto h3 {
@@ -354,7 +351,7 @@ section#contacto2 label {
 	border-radius: 0;
 }
 .btn {
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Poppins', sans-serif, 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	letter-spacing: 1px;
 }

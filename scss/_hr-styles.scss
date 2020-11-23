@@ -1,3 +1,7 @@
+@keyframes rotate {from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}}
 .d-none{
     display: none;
 }
@@ -188,6 +192,9 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
     content: url(../img/icn_circle_25.svg);
     position: absolute;
     top: -30px;
+    -webkit-animation: 6s rotate linear infinite;
+    animation: 6s rotate linear infinite;
+    transform: rotate(0deg);
 }
 .txt-about-us{
     margin: 102px auto;
@@ -208,14 +215,8 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
 @media all and(min-width:1240px){
     .about-title.AgH2::before{
         content: url(../img/icn_circle.svg);
-        -webkit-animation: 6s rotate linear infinite;
-        animation: 6s rotate linear infinite;
-        transform: rotate(0deg);
+        
     }
-    @keyframes rotate {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}}
-    @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
-    to {-webkit-transform: rotate(360deg);}}
 }
 .txt-about-us p {
     font-size: 17px;
@@ -236,20 +237,13 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
         font-family: 'Poppins', sans-serif;
         font-weight: lighter;
         font-size: 17px;
+        line-height: 1.5;
     }
 }
-#ourmodel2 div.container div.row div:nth-of-type(1) img{
+#ourmodel2 div.container div.row div img{
     width: 177px;
 }
-#ourmodel2 div.container div.row div:nth-of-type(2) img{
-    width: 230px;
-}
-#ourmodel2 div.container div.row div:nth-of-type(3) img{
-    width: 216px;
-}
-#ourmodel2 div.container div.row div:nth-of-type(4) img{
-    width: 229px;
-}
+
 #services .AgH2 {
     font-size:36px;
 }
