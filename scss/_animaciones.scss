@@ -5,7 +5,6 @@ img.hand_blue.mobile{
 img.hand_blue.desktop{
    display: none;
 }
-
 section#services img{
    position: absolute;
 }
@@ -16,8 +15,12 @@ section#services img.bg_blue{ display: none;}
 .our_services {
    margin-bottom:0;
    padding:0;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
 }
 @media all and(min-width:768px){
    .our_services {
@@ -106,7 +109,6 @@ section#services img.bg_blue{ display: none;}
    -webkit-transform: translate(700px);
        -ms-transform: translate(700px);
            transform: translate(700px);
-
    -webkit-animation-duration: 1s;
    animation-duration: 1s;
    -webkit-animation-fill-mode: both;
@@ -114,10 +116,13 @@ section#services img.bg_blue{ display: none;}
 }
 .img-about-us img:nth-of-type(2).cartel_data{
     opacity: 0;
-    transform: translate(700px);
+    -webkit-transform: translate(700px);
+        -ms-transform: translate(700px);
+            transform: translate(700px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     z-index: 2;
@@ -125,14 +130,16 @@ section#services img.bg_blue{ display: none;}
 .img-about-us img.hand{
     opacity: 0;
     bottom: -267px;
-    transform: translateY(264px);
+    -webkit-transform: translateY(264px);
+        -ms-transform: translateY(264px);
+            transform: translateY(264px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
  }
-//  manos azules
 img.line2{
     left: -249px;
     bottom: -69px;
@@ -147,21 +154,25 @@ img.line2{
 }
 img.bg_blue{
     opacity: 0;
-    transform: translate(-700px);
+    -webkit-transform: translate(-700px);
+        -ms-transform: translate(-700px);
+            transform: translate(-700px);
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-
 img.marketplace{
    width:320px;
    margin-top: 40px;
     opacity: 0;
-    transform: translate(-700px);
+    -webkit-transform: translate(-700px);
+        -ms-transform: translate(-700px);
+            transform: translate(-700px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     z-index: 6;
@@ -175,25 +186,26 @@ img.marketplace{
 img.hand_blue{
     opacity: 0;
     bottom: -267px;
-    transform: translateY(264px);
+    -webkit-transform: translateY(264px);
+        -ms-transform: translateY(264px);
+            transform: translateY(264px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
  }
- // Cursor
 .typed-cursor {
     opacity: 1;
 }
-//  manos azules
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
-    100% {opacity: 1; transform: translate(0);transform: translateY(0);}
+    100% {opacity: 1; -webkit-transform: translate(0); transform: translate(0);-webkit-transform: translateY(0);transform: translateY(0);}
  }
 @keyframes fadeIn {
     0% {opacity: 0;}
-    100% {opacity: 1;  transform: translate(0);transform: translateY(0);}
+    100% {opacity: 1;  -webkit-transform: translate(0);  transform: translate(0);-webkit-transform: translateY(0);transform: translateY(0);}
  }
  .fadeIn {
     -webkit-animation-name: fadeIn;
@@ -201,11 +213,11 @@ img.hand_blue{
  }
 @-webkit-keyframes handIn {
     0% {opacity: 0;}
-    100% {opacity: 1; transform: translate(0);bottom:0;transform: translateY(0);}
+    100% {opacity: 1; -webkit-transform: translate(0); transform: translate(0);bottom:0;-webkit-transform: translateY(0);transform: translateY(0);}
  }
  @keyframes handIn {
     0% {opacity: 0;}
-    100% {opacity: 1;  transform: translate(0);bottom:0;transform: translateY(0);}
+    100% {opacity: 1;  -webkit-transform: translate(0);  transform: translate(0);bottom:0;-webkit-transform: translateY(0);transform: translateY(0);}
  }
  .handIn {
     -webkit-animation-name: handIn;
@@ -217,20 +229,23 @@ img.hand_blue{
     left: -100px;
     position: absolute;
     z-index: -1;
-    transform: translateY(264px);
+    -webkit-transform: translateY(264px);
+        -ms-transform: translateY(264px);
+            transform: translateY(264px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
  @-webkit-keyframes fadeDown {
     0% {opacity: 0;}
-    100% {opacity: 0.3; transform: translate(0);bottom:0;transform: translateX(0);}
+    100% {opacity: 0.3; -webkit-transform: translate(0); transform: translate(0);bottom:0;-webkit-transform: translateX(0);transform: translateX(0);}
  }
  @keyframes fadeDown {
     0% {opacity: 0;}
-    100% {opacity: 0.3;  transform: translate(0);bottom:0;transform: translateX(0);}
+    100% {opacity: 0.3;  -webkit-transform: translate(0);  transform: translate(0);bottom:0;-webkit-transform: translateX(0);transform: translateX(0);}
  }
  .manchasIn {
     -webkit-animation-name: fadeDown;
@@ -238,20 +253,23 @@ img.hand_blue{
  }
  .city, .people {
     opacity: 0;
-    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+        -ms-transform: translateY(-200px);
+            transform: translateY(-200px);
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 @-webkit-keyframes cityDown {
     0% {opacity: 0;}
-    100% {opacity: 1; transform: translate(0);bottom:0;transform: translateY(0);}
+    100% {opacity: 1; -webkit-transform: translate(0); transform: translate(0);bottom:0;-webkit-transform: translateY(0);transform: translateY(0);}
  }
  @keyframes cityDown {
     0% {opacity: 0;}
-    100% {opacity: 1;  transform: translate(0);bottom:0;transform: translateY(0);}
+    100% {opacity: 1;  -webkit-transform: translate(0);  transform: translate(0);bottom:0;-webkit-transform: translateY(0);transform: translateY(0);}
  }
  .cityIn {
     -webkit-animation-name: cityDown;
@@ -267,7 +285,8 @@ img.hand_blue{
     animation: typedjsBlink 0.6s infinite;
     -webkit-animation: typedjsBlink 0.6s infinite;
     animation: typedjsBlink 0.6s infinite;
-    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     display: none;
 }
 @media all and(min-width:1240px){
@@ -278,6 +297,11 @@ img.hand_blue{
       left: 50px;
    }
 }
+@-webkit-keyframes typedjsBlink {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ }
 @keyframes typedjsBlink {
     0% {opacity: 0;}
     50% {opacity: 0;}
@@ -402,8 +426,6 @@ img.hand_blue.enchufa{
       margin-left:281px;
    }
 }
-/* Portrait */
-
 /* tablets portrait */
 @media only screen 
 and (min-device-width : 768px) 
@@ -420,8 +442,12 @@ and (orientation : portrait) {
         background-image: url(../img/bg-blue.svg);
         background-position: center;
         background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     section#services img:nth-of-type(2).hand_blue.desktop{
          display: block;
