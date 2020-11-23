@@ -5,16 +5,45 @@ navbar_toggler.addEventListener('click', () =>{
 });
 window.addEventListener('scroll', () => {
     const bgpink = document.querySelector('.bg_pink');
+    const aboutTitle = document.querySelector('.about-title');
     const ubibgpink = bgpink.getBoundingClientRect();
-
+    const txtaboutusP = document.querySelector('.p-about-us');
+    
     if (ubibgpink.top < 500) {
         bgpink.classList.add('fadeIn');
+        aboutTitle.classList.add('d-block', 'animate__fadeInDown');
+        aboutTitle.style.setProperty('--animate-duration', '2s');
+        txtaboutusP.classList.add('d-block', 'animate__fadeInDown');
+        txtaboutusP.style.setProperty('--animate-duration', '2s');
+    }
+});
+window.addEventListener('scroll', () => {
+    const ourmodel = document.getElementById('ourmodel');
+    const ubiourmodel = ourmodel.getBoundingClientRect();
+    const sectionHeading = document.querySelector('.section-heading.AgH2.animate__animated');
+    
+    if (ubiourmodel.top < 800) {
+        sectionHeading.classList.add('d-block', 'animate__fadeInDown');
+        sectionHeading.style.setProperty('--animate-duration', '2s');
+    }
+});
+window.addEventListener('scroll', () => {
+    const services = document.getElementById('services');
+    const ubiservices = services.getBoundingClientRect();
+    const ourServices = document.querySelector('.our_services');
+    const arrowServices = document.querySelector('.arrow-services');
+
+    if (ubiservices.top < 600) {
+        ourServices.classList.add('d-flex', 'animate__fadeInDown');
+        ourServices.style.setProperty('--animate-duration', '2s');
+        arrowServices.classList.add('d-flex', 'animate__fadeInDown');
+        arrowServices.classList.remove('d-none');
+        arrowServices.style.setProperty('--animate-duration', '2.5s');
     }
 });
 window.addEventListener('scroll', () => {
     const cartel = document.querySelector('.cartel_data');
     const ubicartel = cartel.getBoundingClientRect();
-    console.log(ubicartel);
 
     if (ubicartel.top < 700) {
         cartel.classList.add('fadeIn');
@@ -23,11 +52,9 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const hand = document.querySelector('.hand');
     const thehand = hand.getBoundingClientRect();
-    console.log(thehand);
 
     if (thehand.top < 1500) {
-        hand.classList.add('handIn');
-        hand.classList.add('enchufa');
+        hand.classList.add('handIn', 'enchufa');
     }
 });
 window.addEventListener('scroll', () => {
@@ -41,7 +68,6 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const marketplace = document.querySelector('.marketplace');
     const ubimarketplace = marketplace.getBoundingClientRect();
-    console.log(ubimarketplace);
 
     if (ubimarketplace.top < 700) {
         marketplace.classList.add('fadeIn');
@@ -50,27 +76,22 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const hand_blue = document.querySelector('.hand_blue.mobile');
     const thehand_blue = hand_blue.getBoundingClientRect();
-    console.log(thehand_blue);
 
     if (thehand_blue.top < 1500) {
-        hand_blue.classList.add('handIn');
-        hand_blue.classList.add('enchufa');
+        hand_blue.classList.add('handIn', 'enchufa');
     }
 });
 window.addEventListener('scroll', () => {
     const hand_blue_desktop = document.querySelector('.hand_blue.desktop');
     const thehand_blue_desktop = hand_blue_desktop.getBoundingClientRect();
-    console.log(thehand_blue_desktop);
 
     if (thehand_blue_desktop.top < 1500) {
-        hand_blue_desktop.classList.add('handIn');
-        hand_blue_desktop.classList.add('enchufa');
+        hand_blue_desktop.classList.add('handIn', 'enchufa');
     }
 });
 window.addEventListener('scroll', () => {
     const manchas = document.querySelector('.manchas');
     const themanchas = manchas.getBoundingClientRect();
-    console.log(themanchas);
 
     if (themanchas.top < 500) {
         manchas.classList.add('manchasIn');
@@ -79,7 +100,6 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const city = document.querySelector('.city');
     const thecity = city.getBoundingClientRect();
-    console.log(thecity);
 
     if (thecity.top < 500) {
         city.classList.add('cityIn');
@@ -88,7 +108,6 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     const city = document.querySelector('.people');
     const thepeople = people.getBoundingClientRect();
-    console.log(thepeople);
 
     if (thepeople.top < 500) {
         people.classList.add('peopleIn');

@@ -1,3 +1,9 @@
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
 input[type="text"], input[type="password"], textarea, select, button { 
     outline: none; 
     resize: none;
@@ -9,7 +15,7 @@ input:focus, input.form-control:focus, textarea.form-control:focus {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
-h1::selection, h2::selection, h4::selection, p::selection, label::selection , span::selection, strong::selection, b::selection {
+h1::selection, h2::selection, h4::selection, p::selection, label::selection , span::selection, strong::selection, b::selection, input::selection, textarea::selection, a::selection {
     background: #3575F7;
     color: #fff;
 }
@@ -178,7 +184,6 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
     font-size: 17px;
 }
 /* About us */
-
 .about-title.AgH2::before{
     content: url(../img/icn_circle_25.svg);
     position: absolute;
@@ -196,18 +201,27 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
         order: 2;
     }
     .about-title.AgH2::before{
-        top: -78px;
+        top: -120px;
+        left: -20px;
     }
 }
 @media all and(min-width:1240px){
     .about-title.AgH2::before{
         content: url(../img/icn_circle.svg);
+        -webkit-animation: 6s rotate linear infinite;
+        animation: 6s rotate linear infinite;
+        transform: rotate(0deg);
     }
+    @keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+    @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}}
 }
 .txt-about-us p {
     font-size: 17px;
     padding-top: 31px;
     line-height: 1.5;
+    background-color: red;
 }
 
 /* ourmodel12 */
@@ -239,6 +253,7 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
 #services .AgH2 {
     font-size:36px;
 }
+
 .section-heading.AgH2{
     width: 100%!important;
     padding: 0 20px;
@@ -329,10 +344,16 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
 .img-about-us img.icn_cross{
     left: 61px;
     bottom:36px;
+    -webkit-animation: 6s rotate linear infinite;
+    animation: 6s rotate linear infinite;
+    transform: rotate(0deg);
 }
 .img-about-us img.icn_circle{
     right: 36px;
     bottom: 56px;
+    -webkit-animation: 6s rotate linear infinite;
+    animation: 6s rotate linear infinite;
+    transform: rotate(0deg);
 }
 @media all and(min-width:1240px){
     .img-about-us img.icn_cross{
@@ -344,6 +365,7 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
         bottom: -10px;
     }
     section#aboutus h2{
+        display: none;
         text-align:left;
         font-size: 48px;
     }
@@ -421,6 +443,9 @@ img.icn_mouse{
 .txt-about-us p{
     font-size: 17px;
     padding: 0 15px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
 }
 .header-block br {
     display: none;
@@ -572,6 +597,11 @@ img.icn_mouse{
     margin-top: 14px;
     margin-bottom: 20px;
     font-weight: bold;
+}
+#contacto button#sendMessageButton {
+    &:hover {
+        background-color: #FF3251!important;
+    }
 }
 #contacto p {
     width:100%;
