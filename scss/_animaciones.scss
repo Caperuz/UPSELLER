@@ -5,12 +5,7 @@ img.hand_blue.mobile{
 img.hand_blue.desktop{
    display: none;
 }
-.our_services {
-   margin-bottom:87px;
-   padding:0;
-   display: flex;
-   justify-content: center;
-}
+
 section#services img{
    position: absolute;
 }
@@ -18,9 +13,16 @@ section#services img.manchas {
    display: none;
 }
 section#services img.bg_blue{ display: none;}
-
+.our_services {
+   margin-bottom:0;
+   padding:0;
+   display: flex;
+   justify-content: center;
+}
 @media all and(min-width:768px){
-   
+   .our_services {
+      margin-bottom:87px;
+   }
    img.hand_blue{
       display: block;
    }
@@ -118,6 +120,7 @@ section#services img.bg_blue{ display: none;}
     animation-delay: 0s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    z-index: 2;
  }
 .img-about-us img.hand{
     opacity: 0;

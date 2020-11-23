@@ -102,7 +102,40 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
     }
     
 }
+.letsWork, .firulete { display: none;}
+.mancharIzq img{
+    position: absolute;
+    left: -101px;
+    top: -59px;
+    width: 146px;
+}
 @media all and(min-width:768px){
+    .manchar {
+        position: absolute;
+        right: 48px;
+        top: -110px;
+        z-index: 0;
+    }
+    .mancharIzq img{
+        position: absolute;
+        left: -115px;
+        bottom: -285px;
+        z-index: 0;
+        width: auto;
+        top: unset;
+    }
+    .letsWork{
+        display: block;
+        position: absolute;
+        right: -43px;
+        bottom: 294px;
+        transform: rotate(-90deg);
+        font-size: 14px;
+    }
+    .letsWork p::before{
+        content: url('../img/before_letswork.svg');
+        padding-right: 18px;
+    }
     .title-upseller{
         width: 449px;
         font-size: 56px;
@@ -208,25 +241,21 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
         order: 2;
     }
     .about-title.AgH2::before{
-        top: -120px;
-        left: -20px;
+        top: -63px;
+        left: 0px;
     }
 }
 @media all and(min-width:1240px){
+    .about-title.AgH2::before{
+        top: -120px;
+        left: -20px;
+    }
     .about-title.AgH2::before{
         content: url(../img/icn_circle.svg);
         
     }
 }
-.txt-about-us p {
-    font-size: 17px;
-    padding-top: 31px;
-    line-height: 1.5;
-    background-color: red;
-}
-
 /* ourmodel12 */
-
 #ourmodel2 {
     h4{
         font-weight: bold;
@@ -236,8 +265,13 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
     p{
         font-family: 'Poppins', sans-serif;
         font-weight: lighter;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1.5;
+    }
+}
+@media all and(min-width:1240px){
+    #ourmodel2 {
+        font-size: 17px;
     }
 }
 #ourmodel2 div.container div.row div img{
@@ -268,6 +302,11 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
     }
 }
 @media all and(min-width:1680px){
+    .firulete {
+        display: block;
+        position: absolute;
+        right: -300px;
+    }
     #ourmodel2 div.container{
         max-width: 1543px;
     }
@@ -276,7 +315,11 @@ h1::-moz-selection, h2::-moz-selection, h4::-moz-selection, p::-moz-selection, l
         font-size: 48px!important;
     }
 }
-
+@media all and(min-width:1920px){
+    .firulete {
+        right: -416px;
+    }
+}
 /* nav */
 
 #mainNav.navbar-shrink{
@@ -433,11 +476,10 @@ img.icn_mouse{
         padding: 0 15px;
     }
 }
-
-.txt-about-us p{
+.txt-about-us p {
     font-size: 17px;
-    padding: 0 15px;
-    background-color: #fff;
+    padding-top: 31px;
+    line-height: 1.5;
     position: relative;
     z-index: 2;
 }
@@ -497,8 +539,20 @@ img.icn_mouse{
     margin-top: 28px;
     order:2;
 }
+.yes-content div:nth-of-type(1) > img#people{
+    display: none;
+}
+.yes-content div img#peopleCity{
+    width:100%;
+}
 @media all and(min-width:768px){
     .yes-content .AgH2{ font-size: 48px;}
+    .yes-content div:nth-of-type(1) > img#people{
+        display: block;
+    }
+    .yes-content div img#peopleCity{
+        display: none;
+    }
 }
 @media all and(min-width:1240px){
     .yes-content .AgH2{ font-size: 48px;}
@@ -512,7 +566,6 @@ img.icn_mouse{
 }
 .yes-content div:nth-of-type(1) > img#people{
     width: 100%;
-    display: block;
     z-index: 2;
     right: 0;
     order:1;
@@ -630,8 +683,13 @@ img.icn_mouse{
         padding-left:0;
     }
 }
+@media all and (max-width:1023px){
+    #contacto a.go-top{
+        display: none!important;
+    }
+}
 #contacto a.go-top{
-    display: none!important;
+    display: none;
     width:48px;
     height: 48px;
     border-radius: 100%;

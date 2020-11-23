@@ -8,13 +8,18 @@ window.addEventListener('scroll', () => {
     const aboutTitle = document.querySelector('.about-title');
     const ubibgpink = bgpink.getBoundingClientRect();
     const txtaboutusP = document.querySelector('.p-about-us');
-    
+    const manchar = document.querySelector('.manchar');
+    const mancharIzq = document.querySelector('.mancharIzq');
     if (ubibgpink.top < 500) {
         bgpink.classList.add('fadeIn');
         aboutTitle.classList.add('d-block', 'animate__fadeInDown');
         aboutTitle.style.setProperty('--animate-duration', '2s');
         txtaboutusP.classList.add('d-block', 'animate__fadeInDown');
         txtaboutusP.style.setProperty('--animate-duration', '2s');
+        manchar.classList.add('d-block', 'animate__backInRight');
+        manchar.style.setProperty('--animate-duration', '2s');
+        mancharIzq.classList.add('d-block', 'animate__backInLeft');
+        mancharIzq.style.setProperty('--animate-duration', '2s');
     }
 });
 window.addEventListener('scroll', () => {
