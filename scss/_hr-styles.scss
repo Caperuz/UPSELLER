@@ -735,6 +735,7 @@ img.icn_mouse{
     }
     #contacto p {
         width:432px;
+        text-align:left;
     }
     #contacto h2.AgH2 {
         font-size: 48px;
@@ -762,6 +763,11 @@ img.icn_mouse{
     }
 }
 @media all and (min-width:1240px){
+    #contacto a.go-top{
+        right: 0;
+    }
+}
+@media all and (min-width:1680px){
     #contacto a.go-top{
         right: -93px;
     }
